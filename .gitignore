@@ -1,0 +1,7 @@
+.DS_Store
+
+__pycache__/
+outputs/*
+!outputs/.keep
+
+# frozar_main.py
