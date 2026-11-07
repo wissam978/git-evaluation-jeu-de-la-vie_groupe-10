@@ -5,3 +5,5 @@ outputs/*
 !outputs/.keep
 
 # frozar_main.py
+*.mp4
+*.ppm
