@@ -38,12 +38,12 @@ def non_negative_int(value):
 
 
 def parse_args(argv=None):
+    """Lit les arguments de la ligne de commande."""
     parser = argparse.ArgumentParser(
         description="Simulation du jeu de la vie sur une grille carrée.")
     parser.add_argument("-n", "--nb_cells", type=positive_int, default=10,
                         metavar="N",
-                        help="cellules par côté d'une grille aléatoire "
-                             "(défaut : 10)")
+                        help="cellules par côté d'une grille aléatoire (défaut : 10)")
     parser.add_argument("-m", "--max_iterations", type=non_negative_int,
                         default=20, metavar="N",
                         help="numéro de la dernière itération (défaut : 20)")
