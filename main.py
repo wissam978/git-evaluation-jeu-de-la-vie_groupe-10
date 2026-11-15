@@ -116,6 +116,7 @@ def read_stdin_grid():
 # ---------------------------------------------------------------------------
 
 def count_neighbors(grid, row, col, periodic):
+    """Compte les voisines vivantes d'une cellule (limites fixes ou périodiques)."""
     size = len(grid)
     total = 0
     for d_row in (-1, 0, 1):
@@ -132,6 +133,7 @@ def count_neighbors(grid, row, col, periodic):
 
 
 def next_cell(alive, neighbors):
+    """Applique les règles du jeu à une cellule et renvoie 0 ou 1."""
     if alive:
         return 1 if neighbors in (2, 3) else 0
     return 1 if neighbors == 3 else 0
@@ -157,6 +159,7 @@ def compute_generations(grid, max_iterations, periodic):
 # ---------------------------------------------------------------------------
 
 def write_images(generations, directory):
+    """Écrit une image PNG par génération et annonce le nombre d'images."""
     os.makedirs(directory, exist_ok=True)
     count = 0
     for number, grid in enumerate(generations):
@@ -167,6 +170,7 @@ def write_images(generations, directory):
 
 
 def write_text(generations, max_iterations):
+    """Écrit sur STDOUT la dernière itération (iteration: N puis la grille)."""
     last = None
     for last in generations:
         pass
