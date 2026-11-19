@@ -77,3 +77,19 @@ Pour vérifier le programme avec les scripts de test fournis :
 | -h | --help | affiche l'aide du programme | – |
 
 Une grille lue sur l'entrée standard remplace la grille aléatoire : dans ce cas, -n et -s n'ont pas d'effet.
+
+## Auteurs
+
+- ABASSE Wissam, numéro étudiant : 46008160
+- ABDOUL HALECK Faissa, numéro étudiant : 46008873
+
+## Liens utiles
+
+- [Jeu de la vie](https://fr.wikipedia.org/wiki/Jeu_de_la_vie) : présentation des règles du jeu de Conway,
+- [Documentation argparse](https://docs.python.org/fr/3/library/argparse.html) : analyse des arguments d'un script Python,
+- [Documentation random](https://docs.python.org/fr/3/library/random.html) : génération de grilles aléatoires reproductibles,
+- [Pipeline (Unix)](https://en.wikipedia.org/wiki/Pipeline_(Unix)) : description du pipe,
+- [Installation de WSL](https://learn.microsoft.com/fr-fr/windows/wsl/install) : procédure officielle pour Windows,
+- [Documentation ffmpeg](https://ffmpeg.org/documentation.html) : installation et utilisation de ffmpeg,
+- [Site officiel de Gource](https://gource.io/) : présentation et téléchargement de Gource,
+- [Documentation officielle de git rebase](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing) : fonctionnement du rebase.
