@@ -63,3 +63,17 @@ Pour vérifier le programme avec les scripts de test fournis :
 
     sh check_script_options.sh
     sh check_tests.sh
+
+## Arguments
+
+| Court | Long | Description | Valeur par défaut |
+|---|---|---|---|
+| -n N | --nb_cells N | nombre de cellules par côté d'une grille aléatoire (entier strictement positif) | 10 |
+| -m N | --max_iterations N | numéro de la dernière itération à calculer (entier positif ou nul) | 20 |
+| -s N | --seed N | graine du générateur aléatoire (tout entier, y compris négatif ou nul) | 42 |
+| -o DOSSIER | --output_directory DOSSIER | dossier dans lequel écrire les images | outputs |
+| -t TYPE | --output_type TYPE | type de sortie : image ou text | image |
+| -p | --periodic | active les conditions aux limites périodiques | désactivé |
+| -h | --help | affiche l'aide du programme | – |
+
+Une grille lue sur l'entrée standard remplace la grille aléatoire : dans ce cas, -n et -s n'ont pas d'effet.
