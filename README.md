@@ -77,3 +77,8 @@ Pour vérifier le programme avec les scripts de test fournis :
 | -h | --help | affiche l'aide du programme | – |
 
 Une grille lue sur l'entrée standard remplace la grille aléatoire : dans ce cas, -n et -s n'ont pas d'effet.
+
+## Auteurs
+
+- ABASSE Wissam, numéro étudiant : 46008160
+- ABDOUL HALECK Faissa, numéro étudiant : 46008873
