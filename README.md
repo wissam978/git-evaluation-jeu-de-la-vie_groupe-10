@@ -93,3 +93,18 @@ Une grille lue sur l'entrée standard remplace la grille aléatoire : dans ce ca
 - [Documentation ffmpeg](https://ffmpeg.org/documentation.html) : installation et utilisation de ffmpeg,
 - [Site officiel de Gource](https://gource.io/) : présentation et téléchargement de Gource,
 - [Documentation officielle de git rebase](https://git-scm.com/book/fr/v2/Les-branches-avec-Git-Rebaser-Rebasing) : fonctionnement du rebase.
+
+## Vidéos
+
+Vidéo de la simulation (grille de 50 cellules par côté, 2000 itérations, graine 4200) : https://youtu.be/iRHUEsluoNo
+
+Commandes utilisées :
+
+    python3 main.py --nb_cells 50 --max_iterations 2000 --seed 4200 --output_type image --output_directory outputs/video-seed-4200
+    ffmpeg -y -framerate 20 -start_number 0 -i outputs/video-seed-4200/grid_%04d.png -frames:v 2001 -c:v libx264 -pix_fmt yuv420p -movflags +faststart outputs/video-seed-4200/game-of-life.mp4
+
+Vidéo Gource de l'historique du dépôt : https://youtu.be/XYiJZVmjzkk
+
+## Intégration continue
+
+Exécution réussie du workflow de tests (GitHub Actions) : https://github.com/wissam978/git-evaluation-jeu-de-la-vie_groupe-10/actions/runs/44782851831
