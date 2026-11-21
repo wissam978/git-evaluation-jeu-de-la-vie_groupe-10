@@ -81,7 +81,7 @@ Une grille lue sur l'entrée standard remplace la grille aléatoire : dans ce ca
 ## Auteurs
 
 - ABASSE Wissam, numéro étudiant : 46008160
-- ABDOUL HALECK Faissa, numéro étudiant : 46008873
+- ABDOUL HALECK Faïssa, numéro étudiant : 46008873
 
 ## Liens utiles
 
